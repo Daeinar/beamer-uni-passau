@@ -1,0 +1,58 @@
+%
+%   Inofficial Universität Passau LaTeX beamer style file.
+%   ------
+%
+%   :copyright: (c) 2014 Philipp Jovanovic <philipp@jovanovic.io>.
+%   :license: CC0, see LICENSE for more details.
+%
+\mode<presentation>
+
+\useoutertheme{unipassau}
+
+\usepackage{color}
+
+% color definitions
+\definecolor{uiyellow}{RGB}{250,150,0}
+\definecolor{uigrey}{RGB}{125,125,125}
+\definecolor{uiblack}{RGB}{0,0,0}
+
+% title colors
+\setbeamercolor{title}{fg=uiyellow}
+\setbeamercolor{subtitle}{fg=uigrey}
+\setbeamercolor{author}{fg=uigrey}
+\setbeamercolor{institute}{fg=uigrey}
+\setbeamercolor{date}{fg=uigrey}
+
+% colors for specific elements
+\setbeamercolor{frametitle}{fg=uigrey}
+\setbeamercolor{block title}{fg=uiyellow}
+\setbeamercolor{item}{fg=uiyellow}
+\setbeamercolor{section in toc}{fg=uiblack}
+\setbeamercolor{subsection in toc}{bg=uigrey,fg=uigrey}
+
+\setbeamerfont{framesubtitle}{size=\footnotesize}
+
+% caption styling (table, figure etc.)
+\usepackage{caption}
+\DeclareCaptionFont{uiblack}{\color{uiblack}}
+\DeclareCaptionFont{uiyellow}{\color{uiyellow}}
+\captionsetup{labelfont={uiyellow},textfont={uiblack}}
+
+% sub-/section styling in table of contents
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[default]
+
+% frame title styling
+\setbeamertemplate{frametitle}{%
+  \vspace{0.4cm}%
+  \hbox{%
+  \begin{beamercolorbox}[wd=0.95\paperwidth,ht=2.25ex,dp=1ex,left]{frametitle}%
+    \insertframetitle\\[0.1cm]
+    \usebeamerfont{framesubtitle}%
+    \insertframesubtitle%
+  \end{beamercolorbox}}%
+}%
+
+
+\mode
+<all>
