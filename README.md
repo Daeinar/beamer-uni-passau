@@ -2,13 +2,13 @@
 
 ####Usage
 Copy `beamerthemeunipassau.sty` and `beamerouterthemeunipassau.sty` to the folder containing your main slide file. Then include the style by adding
-
-  \mode<presentation>
-  {
-    \usetheme{unipassau}
-    \setbeamercovered{transparent}
-  }
-
+```
+\mode<presentation>
+{
+  \usetheme{unipassau}
+  \setbeamercovered{transparent}
+}
+```
 to your main slides file.
 
 ####Examples
