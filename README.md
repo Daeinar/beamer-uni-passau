@@ -2,9 +2,9 @@
 
 ####Screenshots
 
-<div align="center">![Title Page](https://github.com/Daeinar/beamer-uni-passau/blob/master/screenshot1.png?raw=true "Title Page")</div>
-<div align="center">![Slide 1](https://github.com/Daeinar/beamer-uni-passau/blob/master/screenshot2.png?raw=true "Slide 1")</div>
-<div align="center">![Slide 2](https://github.com/Daeinar/beamer-uni-passau/blob/master/screenshot3.png?raw=true "Slide 2")</div>
+->![Title Page](https://github.com/Daeinar/beamer-uni-passau/blob/master/screenshot1.png?raw=true "Title Page")<-
+->![Slide 1](https://github.com/Daeinar/beamer-uni-passau/blob/master/screenshot2.png?raw=true "Slide 1")<-
+->![Slide 2](https://github.com/Daeinar/beamer-uni-passau/blob/master/screenshot3.png?raw=true "Slide 2")<-
 
 ####Usage
 Copy `beamerthemeunipassau.sty` and `beamerouterthemeunipassau.sty` to the folder containing your main slide file. Then include the style by adding
