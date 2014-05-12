@@ -1,5 +1,11 @@
 ### Inofficial Universität Passau LaTeX Beamer Theme
 
+####Screenshots
+
+![Title Page](https://github.com/Daeinar/beamer-uni-passau/screenshot1.png?raw=true "Title Page")
+![Slide 1](https://github.com/Daeinar/beamer-uni-passau/screenshot2.png?raw=true "Slide 1")
+![Slide 2](https://github.com/Daeinar/beamer-uni-passau/screenshot3.png?raw=true "Slide 2")
+
 ####Usage
 Copy `beamerthemeunipassau.sty` and `beamerouterthemeunipassau.sty` to the folder containing your main slide file. Then include the style by adding
 ```
