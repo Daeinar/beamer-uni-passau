@@ -1,0 +1,87 @@
+%
+%   Inofficial Universität Passau LaTeX Beamer Style File (Minimal Version)
+%   ------
+%
+%   :copyright: (c) 2014 Philipp Jovanovic <philipp@jovanovic.io>.
+%   :license: CC0, see LICENSE for more details.
+%
+\mode<presentation>
+
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{caption}
+
+% official Universität Passau colors
+\definecolor{uporange}{RGB}{242,148,0}
+\definecolor{upgrey}{RGB}{153,159,158}
+\definecolor{upjura}{RGB}{229,49,56}
+\definecolor{upphil}{RGB}{188,42,51}
+\definecolor{upwiwi}{RGB}{0,96,57}
+\definecolor{upfim}{RGB}{0,90,161}
+
+\definecolor{uidarkgrey}{RGB}{125,125,125}
+\definecolor{uiblack}{RGB}{0,0,0}
+
+% title colors
+\setbeamercolor{title}{fg=uporange}
+\setbeamercolor{subtitle}{fg=uidarkgrey}
+\setbeamercolor{author}{fg=uidarkgrey}
+\setbeamercolor{institute}{fg=uidarkgrey}
+\setbeamercolor{date}{fg=uidarkgrey}
+
+% colors for specific (inner) elements
+\setbeamercolor{frametitle}{fg=upgrey}
+\setbeamercolor{frametitle ruler}{fg=upgrey}
+\setbeamercolor{block title}{fg=uporange}
+\setbeamercolor{item}{fg=uporange}
+\setbeamercolor{section in toc}{fg=uidarkgrey}
+\setbeamercolor{subsection in toc}{bg=upgrey,fg=upgrey}
+
+\setbeamerfont{framesubtitle}{size=\footnotesize}
+
+% caption styling (table, figure etc.)
+\DeclareCaptionFont{uiblack}{\color{uiblack}}
+\DeclareCaptionFont{uporange}{\color{uporange}}
+\captionsetup{labelfont={uporange},textfont={uiblack}}
+
+% sub-/section styling in table of contents
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[default]
+
+% footer colors
+\setbeamercolor{footer-ruler}{fg=upgrey,bg=white}
+\setbeamercolor{footer}{fg=upgrey,bg=white}
+
+
+% define and set header design
+\setbeamertemplate{frametitle}
+{%
+  \vskip0.15cm%
+  \hbox{%
+  \begin{beamercolorbox}[leftskip=0.5cm,wd=\paperwidth,ht=0.75cm]{frametitle}%
+      \hbox{\insertframetitle}%
+  \end{beamercolorbox}}%
+}%
+
+
+% define footer design
+\defbeamertemplate*{footline}{unipassautheme}%
+{%
+  \hbox{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=0.35cm,dp=2.25ex,center]{footer}%
+    \scriptsize{\insertshorttitle \hfill\hfill\hfill \insertauthor \hfill\hfill\hfill \insertframenumber{} / \inserttotalframenumber}%
+  \end{beamercolorbox}
+  }%
+}%
+
+
+% set the logo
+\logo {%
+  \begin{tikzpicture}[remember picture,overlay]%
+    \node[anchor=north east,xshift=-0.45cm,yshift=-0.25cm] at (current page.north east) {\includegraphics[width=3cm]{logo.pdf}};%
+  \end{tikzpicture}
+}%
+
+
+\mode
+<all>
