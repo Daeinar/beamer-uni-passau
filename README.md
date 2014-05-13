@@ -2,20 +2,21 @@
 
 ####Screenshots
 
-<div align="center"><img src="https://github.com/Daeinar/beamer-uni-passau/blob/master/screenshot1.png?raw=true" alt="Title Page"/></div>
-<div align="center"><img src="https://github.com/Daeinar/beamer-uni-passau/blob/master/screenshot2.png?raw=true" alt="Slide 1"/></div>
-<div align="center"><img src="https://github.com/Daeinar/beamer-uni-passau/blob/master/screenshot3.png?raw=true" alt="Slide 2"/></div>
+<div align="center"><img src="https://github.com/Daeinar/beamer-uni-passau/blob/master/screenshots/1.png?raw=true" alt="Title Page"/></div>
+<div align="center"><img src="https://github.com/Daeinar/beamer-uni-passau/blob/master/screenshots/2.png?raw=true" alt="Slide 1"/></div>
+<div align="center"><img src="https://github.com/Daeinar/beamer-uni-passau/blob/master/screenshots/3.png?raw=true" alt="Slide 2"/></div>
 
 ####Usage
-Copy `beamerthemeunipassau.sty` and `beamerouterthemeunipassau.sty` to the folder containing your main slide file. Then include the style by adding
+Copy `beamerthemeunipassau.sty`, `beamerouterthemeunipassau.sty` and `logo.pdf` to the folder containing your main slide file. Then include the style by adding
 ```
 \mode<presentation>
 {
   \usetheme{unipassau}
   \setbeamercovered{transparent}
 }
+\logo{\includegraphics[width=3cm]{logo.pdf}\vspace{218pt}\hspace{8pt}}
 ```
-to your main slides file.
+to your main slide file.
 
 ####Examples
 See `slides.tex` and `slides.pdf`.
